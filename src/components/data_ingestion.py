@@ -32,8 +32,8 @@ class DataIngestion:
         try:
             create_directories(self.artifacts_root)
             logging.info(f'Created directory: {self.artifacts_root}')
-            create_directories(Path(self.config.root_dir))
-            logging.info(f'Created directory: {self.config.root_dir}')
+            create_directories(self.root_dir)  # 'self.root_dir' is the 'data_ingestion' directory
+            logging.info(f'Created directory: {self.root_dir}')
         
         except Exception as e:
             logging.error(f'Error occurred: {e}')
