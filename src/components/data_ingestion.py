@@ -10,8 +10,6 @@ import pandas as pd
 from src.constants import *
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__),'..','..')))
 
-CONFIG_FILE_PATH = Path(__file__).resolve().parents[2] / 'config.yaml'
-
 class DataIngestion:
     def __init__(self, config_path = CONFIG_FILE_PATH):
         logging.info('Entered the Data Ingesiton')
@@ -32,8 +30,8 @@ class DataIngestion:
         try:
             create_directories(self.artifacts_root)
             logging.info(f'Created directory: {self.artifacts_root}')
-            create_directories(self.root_dir)  # 'self.root_dir' is the 'data_ingestion' directory
-            logging.info(f'Created directory: {self.root_dir}')
+            create_directories(Path(self.config.root_dir))
+            logging.info(f'Created directory: {self.config.root_dir}')
         
         except Exception as e:
             logging.error(f'Error occurred: {e}')
