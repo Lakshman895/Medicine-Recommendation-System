@@ -17,8 +17,8 @@ A web-based Medicine Recommendation System that predicts diseases and provides r
 The app features separate buttons for each of these functions, allowing users to click and get the specific information they need.
 
 ## Datasets
--The datasets in CSV format.
-  - Github link - https://github.com/Lakshman895/Medicine-Recommendation-System/tree/main/data.git
+-The datasets (in CSV format) are hosted as part of the app, with Flask and Render serving the files directly through URL links.
+  - Github link - https://github.com/Lakshman895/Medicine-Recommendation-System/tree/main/data
   - App link - https://datasetsurl.onrender.com/
 ## Installation
 
