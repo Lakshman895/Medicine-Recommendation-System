@@ -17,8 +17,8 @@ A web-based Medicine Recommendation System that predicts diseases and provides r
 The app features separate buttons for each of these functions, allowing users to click and get the specific information they need.
 
 ## Datasets
--The datasets (in CSV format) are hosted as part of the app, with Flask and Render serving the files directly through URL links.
-  - Github link - https://github.com/Lathacharujenny/DatasetsUrl.git
+-The datasets in CSV format.
+  - Github link - https://github.com/Lakshman895/Medicine-Recommendation-System/tree/main/data.git
   - App link - https://datasetsurl.onrender.com/
 ## Installation
 
@@ -26,11 +26,11 @@ To set up this project locally, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Lathacharujenny/MedicineRecommendationSystem.git
+   git clone https://github.com/Lakshman895/Medicine-Recommendation-System.git
    ```
 2. Navigate to the project directory:
     ```bash
-       cd MedicineRecommendationSystem
+       cd Medicine-Recommendation-System
    ```
 3. Install the required packages:
     ```bash
